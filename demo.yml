@@ -1,0 +1,9 @@
+- hosts: tag_name_server
+  tasks:
+          - template:
+              src: file.yml 
+              dest: /root/file.yml
+            with_items:
+                 - { user: user1, pow: pow1 }
+                 - { user: user2, pow: pow2 }
+                 - { user: user3, pow: pow3 }

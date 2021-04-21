@@ -1,0 +1,5 @@
+Let's assume..............
+This is sudoers file
+----------
+IP: "{{ groups['tag_name_server'] | difference([inventory_hostname]) }}":  User: "{{ item.user }}" with power "{{ item.pow }}"  check
+ 
